@@ -44,7 +44,7 @@ public class FillDataBase {
                 createPreparedStatement.close();
             }
 
-            // Remplissage de la base avec des Vehicules et des Clients
+            // Remplissage de la base de donnée
             Statement stmt = connection.createStatement();
             stmt.execute("INSERT INTO Client(nom, prenom, email, password, listIdAllergenes, boursier) VALUES ('Doe', 'John', 'john.doe@email.com', 'password', '1,2', true)");
             stmt.execute("INSERT INTO Client(nom, prenom, email, password, listIdAllergenes, boursier) VALUES ('Doe', 'Jane','jane.doe@email.com', 'password', '1,2', false)");
