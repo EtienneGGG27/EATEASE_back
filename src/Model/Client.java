@@ -11,27 +11,27 @@ public class Client {
     private int id;
     private Boolean boursier;
 
-    private List<Integer> idAllergenes;
+    private List<Integer> listIdAllergenes;
 
     public Client() {
     }
 
-    public Client(int id, String nom, String prenom, String email, String password, List<Integer> idAllergenes, Boolean boursier) {
+    public Client(int id, String nom, String prenom, String email, String password, List<Integer> listIdAllergenes, Boolean boursier) {
         this.nom = nom;
         this.prenom = prenom;
         this.email = email;
         this.password = password;
         this.id = id;
-        this.idAllergenes = idAllergenes;
+        this.listIdAllergenes = listIdAllergenes;
         this.boursier = boursier;
     }
 
-    public Client(String nom, String prenom, String email, String password, List<Integer> idAllergenes, Boolean boursier) {
+    public Client(String nom, String prenom, String email, String password, List<Integer> listIdAllergenes, Boolean boursier) {
         this.nom = nom;
         this.prenom = prenom;
         this.email = email;
         this.password = password;
-        this.idAllergenes = idAllergenes;
+        this.listIdAllergenes = listIdAllergenes;
         this.boursier = boursier;
     }
 
@@ -47,12 +47,12 @@ public class Client {
         return nom;
     }
 
-    public List<Integer> getIdAllergenes() {
-        return idAllergenes;
+    public List<Integer> getListIdAllergenes() {
+        return listIdAllergenes;
     }
 
-    public void setIdAllergenes(List<Integer> idAllergenes) {
-        this.idAllergenes = idAllergenes;
+    public void setListIdAllergenes(List<Integer> listIdAllergenes) {
+        this.listIdAllergenes = listIdAllergenes;
     }
 
     public void setNom(String nom) {

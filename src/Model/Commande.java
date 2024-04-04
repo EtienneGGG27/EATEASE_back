@@ -1,7 +1,6 @@
 package Model;
 
 import java.time.LocalDate;
-import java.util.Date;
 import java.util.List;
 
 public class Commande {
@@ -11,7 +10,7 @@ public class Commande {
     private LocalDate date;
     private int idClient;
 
-    private List<Integer> idProduit;
+    private List<Integer> listIdProduits;
 
     public Commande() {
     }
@@ -21,26 +20,26 @@ public class Commande {
         this.prix = prix;
         this.date = date;
         this.idClient = idClient;
-        this.idProduit = idProduit;
+        this.listIdProduits = idProduit;
     }
 
     public Commande(double prix, LocalDate date, int idClient, List<Integer> idProduit) {
         this.prix = prix;
         this.date = date;
         this.idClient = idClient;
-        this.idProduit = idProduit;
+        this.listIdProduits = idProduit;
     }
 
     public int getId() {
         return id;
     }
 
-    public List<Integer> getIdProduit() {
-        return idProduit;
+    public List<Integer> getListIdProduits() {
+        return listIdProduits;
     }
 
-    public void setIdProduit(List<Integer> idProduit) {
-        this.idProduit = idProduit;
+    public void setListIdProduits(List<Integer> listIdProduits) {
+        this.listIdProduits = listIdProduits;
     }
 
     public void setId(int id) {

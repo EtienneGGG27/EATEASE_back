@@ -8,30 +8,30 @@ public class Produit {
     private String nom;
     private String description;
     private double prix;
-    private List<Integer> idAllergenes;
+    private List<Integer> listIdAllergenes;
     private String typeProduit;
-    private List<Integer> idMenu;
+    private List<Integer> listIdMenu;
 
     public Produit() {
     }
 
-    public Produit(int id, String nom, String description, double prix, List<Integer> idAllergenes, String typeProduit, List<Integer> idMenu) {
+    public Produit(int id, String nom, String description, double prix, List<Integer> listIdAllergenes, String typeProduit, List<Integer> idMenu) {
         this.id = id;
         this.nom = nom;
         this.description = description;
         this.prix = prix;
-        this.idAllergenes = idAllergenes;
+        this.listIdAllergenes = listIdAllergenes;
         this.typeProduit = typeProduit;
-        this.idMenu = idMenu;
+        this.listIdMenu = idMenu;
     }
 
-    public Produit(String nom, String description, double prix, List<Integer> idAllergenes, String typeProduit, List<Integer> idMenu) {
+    public Produit(String nom, String description, double prix, List<Integer> listIdAllergenes, String typeProduit, List<Integer> idMenu) {
         this.nom = nom;
         this.description = description;
         this.prix = prix;
-        this.idAllergenes = idAllergenes;
+        this.listIdAllergenes = listIdAllergenes;
         this.typeProduit = typeProduit;
-        this.idMenu = idMenu;
+        this.listIdMenu = idMenu;
     }
 
     public int getId() {
@@ -66,12 +66,12 @@ public class Produit {
         this.prix = prix;
     }
 
-    public List<Integer> getIdAllergenes() {
-        return idAllergenes;
+    public List<Integer> getListIdAllergenes() {
+        return listIdAllergenes;
     }
 
-    public void setIdAllergenes(List<Integer> idAllergenes) {
-        this.idAllergenes = idAllergenes;
+    public void setListIdAllergenes(List<Integer> listIdAllergenes) {
+        this.listIdAllergenes = listIdAllergenes;
     }
 
     public String getTypeProduit() {
@@ -82,11 +82,11 @@ public class Produit {
         this.typeProduit = typeProduit;
     }
 
-    public List<Integer> getIdMenu() {
-        return idMenu;
+    public List<Integer> getListIdMenu() {
+        return listIdMenu;
     }
 
-    public void setIdMenu(List<Integer> idMenu) {
-        this.idMenu = idMenu;
+    public void setListIdMenu(List<Integer> listIdMenu) {
+        this.listIdMenu = listIdMenu;
     }
 }

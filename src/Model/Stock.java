@@ -3,19 +3,19 @@ package Model;
 public class Stock {
 
     private String id;
-    private int quanite;
+    private int quantite;
 
     private int idProduit;
 
     public Stock() {
     }
-    public Stock(String id, int quanite, int idProduit) {
+    public Stock(String id, int quantite, int idProduit) {
         this.id = id;
-        this.quanite = quanite;
+        this.quantite = quantite;
         this.idProduit = idProduit;
     }
-    public Stock(int quanite, int idProduit) {
-        this.quanite = quanite;
+    public Stock(int quantite, int idProduit) {
+        this.quantite = quantite;
         this.idProduit = idProduit;
     }
 
@@ -27,12 +27,12 @@ public class Stock {
         this.id = id;
     }
 
-    public int getQuanite() {
-        return quanite;
+    public int getQuantite() {
+        return quantite;
     }
 
-    public void setQuanite(int quanite) {
-        this.quanite = quanite;
+    public void setQuantite(int quantite) {
+        this.quantite = quantite;
     }
 
     public int getIdProduit() {
